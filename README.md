@@ -1,4 +1,4 @@
-# Hi, I'm Caetano
+# Caetano Gonçalves
 Software and Web Development Student | Systems, IoT & Deep Learning
 
 ## About Me
@@ -43,6 +43,18 @@ A multi-threaded password complexity estimator and brute-force simulator that br
   * **Combinatorial Math & BigInt:** Maps strings to their exact lexicographical order in a base-71 bijective numeration system using `BigInt`, predicting the total permutation space before execution.
   * **Dynamic Benchmarking:** Executes a hardware runtime benchmark upon initialization to calculate the host CPU's exact operations-per-millisecond, feeding a predictive time-to-crack model.
   * **Asynchronous Chunked Loops:** Executes Wasm computations in batches of 1,000,000 steps per frame within a Web Worker. Uses an asynchronous recursion pattern (`setTimeout`) to maintain non-blocking execution and allow thread-interruption signals.
+
+---
+
+### [3D Rendering Engine](https://github.com/Caetanoag/3D-Rendering-Engine) (Research / WIP)
+A lightweight 3D software wireframe renderer built from first principles using vanilla JavaScript and the Canvas 2D API.
+
+* **Tech Stack:** Vanilla JavaScript (ES6+), HTML5 Canvas.
+* **Core Architecture:**
+  * **Custom Linear Algebra Library:** Implements raw `Matrix` storage and transformation algorithms (`MatrixMath`) from scratch, handling standard matrix multiplication, transposition, and Hadamard products.
+  * **Graphics Pipeline Mathematics:** Manually processes 3D vertex transformations using X and Y axis rotation matrices alongside 3D coordinate translations.
+  * **Perspective Projection:** Simulates depth and Field of View (FoV) through analytical division mechanics (`fov / (fov + z)`), projecting 3D environments onto a 2D screen viewport.
+  * **Centroid-Based Scaling:** Dynamically computes geometric centroids for arbitrary polyhedral meshes to isolate uniform scaling relative to the object's center of mass.
 
 ---
 
