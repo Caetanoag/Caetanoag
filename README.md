@@ -1,6 +1,8 @@
 # Caetano Gonçalves
 Software and Web Development Student | Systems, IoT & Deep Learning
 
+[![Português](https://img.shields.io/badge/Language-Português-333333?style=flat-square)](./README.pt.md)
+
 ## About Me
 I am studying Web Development at IFRS. While my formal coursework focuses on full-stack web applications, I am a self-learner driven by low-level systems, hardware, and AI. 
 
