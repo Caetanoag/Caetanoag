@@ -4,7 +4,7 @@ Software and Web Development Student | Systems, IoT & Deep Learning
 [![Português](https://img.shields.io/badge/Language-Português-333333?style=flat-square)](./README.pt.md)
 
 ## About Me
-I am studying Web Development at IFRS. While my formal coursework focuses on full-stack web applications, I am a self-learner driven by low-level systems, hardware, and AI. 
+I am studying Web Development at IFRS. While my formal coursework focuses on full-stack web applications, I am a self-learner driven by low-level systems, hardware, and AI.
 
 * **Cybersecurity & Infrastructure:** Focused on networking, cryptography, and DevOps. Developed a custom cryptographic algorithm and actively manage a home server using Docker and Tailscale for secure remote access.
 * **IoT & Embedded Systems:** Worked for two years at the FabLab-affiliated laboratory on campus, gaining hands-on experience with microcontrollers using ESP-IDF and Arduino frameworks.
@@ -37,14 +37,15 @@ A lightweight 2D rendering and linear algebra engine for the browser, built on t
 
 ---
 
-### [Strong Password Validator](https://github.com/Caetanoag/Strong-password-validator) (WIP / Research)
-A multi-threaded password complexity estimator and brute-force simulator that bridges C++ and the browser to evaluate encryption strength.
+### [CriptoBitwise](https://github.com/Caetanoag/cripto-bitwise)
+A custom pure JavaScript cryptographic library that integrates multiple security techniques (obfuscation, bitwise, CBC, non-linear PRNG) to protect messages. *Designed as an educational case study and not for production use.*
 
-* **Tech Stack:** C++, WebAssembly (Wasm), Emscripten, Web Workers, JavaScript (BigInt).
-* **Core Architecture:**
-  * **Combinatorial Math & BigInt:** Maps strings to their exact lexicographical order in a base-71 bijective numeration system using `BigInt`, predicting the total permutation space before execution.
-  * **Dynamic Benchmarking:** Executes a hardware runtime benchmark upon initialization to calculate the host CPU's exact operations-per-millisecond, feeding a predictive time-to-crack model.
-  * **Asynchronous Chunked Loops:** Executes Wasm computations in batches of 1,000,000 steps per frame within a Web Worker. Uses an asynchronous recursion pattern (`setTimeout`) to maintain non-blocking execution and allow thread-interruption signals.
+* **Tech Stack:** Pure JavaScript (ES6+), BigInt, Web Crypto API (`crypto.getRandomValues`).
+* **Key Architecture:**
+  * **Custom PRNG (Xorshift128 Modified):** Developed a modified, non-linear Xorshift128 pseudo-random number generator that integrates state addition, dynamic bitwise rotation, and modular arithmetic to resist linear algebra attacks.
+  * **Key Derivation & Stretching:** Employs a derived 128-bit hash (`gerarHash`) using 100,000 iterations of FNV-1a with `BigInt`, combined with a randomly generated 48-byte Initialization Vector (IV) to prevent rainbow table collisions.
+  * **Encryption Pipeline:** Implements a multi-layered process, starting with a block cipher in **Cipher Block Chaining (CBC)** mode, followed by bitwise obfuscation through dynamic **garbage bit injection**, resulting in a highly non-deterministic ciphertext.
+  * **Authentication (Encrypt-then-MAC):** Generates a 32-character hexadecimal MAC from the final ciphertext for message authentication. Critically, it includes a **constant-time comparison** function (`constantTimeCompare`) to mitigate timing attacks during decryption.
 
 ---
 
