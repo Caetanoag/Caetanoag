@@ -35,14 +35,15 @@ Uma engine leve de renderização 2D e álgebra linear para o navegador, constru
 
 ---
 
-### [Strong Password Validator](https://github.com/Caetanoag/Strong-password-validator) (WIP / Pesquisa)
-Um estimador de complexidade de senhas multithread e simulador de brute-force que conecta C++ ao navegador para avaliar a força de criptografias.
+### [CriptoBitwise](https://github.com/Caetanoag/cripto-bitwise)
+Uma biblioteca criptográfica autoral em JavaScript puro que integra múltiplas técnicas de segurança (obfuscação, bitwise, CBC, PRNG não-linear) para proteger mensagens. *Desenvolvida como um estudo de caso educacional e não recomendada para uso em produção.*
 
-* **Tech Stack:** C++, WebAssembly (Wasm), Emscripten, Web Workers, JavaScript (BigInt).
+* **Tech Stack:** JavaScript Puro (ES6+), BigInt, Web Crypto API (`crypto.getRandomValues`).
 * **Arquitetura-Chave:**
-  * **Matemática Combinatória e BigInt:** Mapeia strings para sua ordem lexicográfica exata em um sistema de numeração bijetivo de base 71 usando `BigInt`, prevendo o espaço de permutação total antes da execução.
-  * **Benchmark Dinâmico:** Executa um benchmark em tempo de execução no hardware assim que inicializado para calcular as operações por milissegundo da CPU local, alimentando um modelo preditivo de tempo de quebra.
-  * **Loops Assíncronos em Lotes:** Executa computações Wasm em lotes de 1.000.000 de passos por frame dentro de um Web Worker. Utiliza um padrão de recursão assíncrona (`setTimeout`) para manter a execução não-bloqueante e permitir sinais de interrupção de thread.
+  * **PRNG Próprio (Xorshift128 Modificado):** Gerador de números pseudoaleatórios modificado e não-linear que integra soma de estados, rotação bitwise dinâmica e aritmética modular para resistir a ataques de álgebra linear.
+  * **Derivação e Extensão de Chave (Key Stretching):** Utiliza um hash derivado de 128 bits (`gerarHash`) processado em 100.000 iterações de FNV-1a com `BigInt`, combinado a um Vetor de Inicialização (IV) aleatório de 48 bytes para prevenir colisões por rainbow tables.
+  * **Pipeline de Criptografia:** Implementa um processo em camadas, iniciando com uma cifra de bloco em modo **Cipher Block Chaining (CBC)**, seguida por obfuscação bitwise através da **injeção dinâmica de bits de lixo**, resultando em um texto cifrado altamente não-determinístico.
+  * **Autenticação (Encrypt-then-MAC):** Gera um MAC hexadecimal de 32 caracteres a partir do texto cifrado final para verificação de integridade. Inclui uma função de **comparação em tempo constante** (`constantTimeCompare`) para mitigar ataques de tempo (timing attacks) durante a descriptografia.
 
 ---
 
