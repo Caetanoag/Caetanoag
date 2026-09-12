@@ -2,6 +2,7 @@
 Software Engineer | TypeScript | C | C++ | Odin
 
 ## About Me
+[![Português](https://img.shields.io/badge/Language-Português-333333?style=flat-square)](./README.pt.md)<br>
 
 My focus in programming has always been in areas related to mathematics and security. Over time, I began developing low-level applications in **C**, **C++**, and **Go**, while simultaneously building graphics applications in **TypeScript** using my own framework, [Vectra](https://github.com/caetanoag/Vectra), built on the **OOP** paradigm.  
 

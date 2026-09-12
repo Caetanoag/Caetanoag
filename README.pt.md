@@ -2,7 +2,7 @@
 Engenheiro de Software | TypeScript | C | C++ | Odin
 
 ## Sobre Mim
-
+[![English](https://img.shields.io/badge/Language-Português-333333?style=flat-square)](./README.md)<br>
 Meu foco na programação sempre foi em áreas relacionadas à matemática e segurança. Com o tempo, passei a desenvolver aplicações de baixo nível em **C**, **C++** e **Go**, enquanto simultaneamente crio aplicações gráficas em **TypeScript** utilizando meu próprio framework, o [Vectra](https://github.com/caetanoag/Vectra), feito no paradigma **OOP**.  
 
 - **Ênfase em Desenvolvimento Web:** Possuo 2 anos de experiência prática com TypeScript para criação de jogos, simulações e demonstrações matemáticas. No ecossistema fullstack, utilizo **Express**, **HTML5**, **CSS3**, **JavaScript**, **PostgreSQL**, **Redis** e **Docker**.
