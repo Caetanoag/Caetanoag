@@ -1,5 +1,5 @@
 # Caetano Gonçalves
-Engenheiro de Software | TypeScript | C | C++ | Odin
+Desenvolvedor Web e de Sistemas | TypeScript | C | C++ | Odin | Golang
 
 ## Sobre Mim
 [![English](https://img.shields.io/badge/Language-English-333333?style=flat-square)](./README.md)<br>
