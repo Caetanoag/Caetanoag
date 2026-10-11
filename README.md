@@ -36,6 +36,11 @@ A programming framework developed in **TypeScript** featuring mathematical primi
 An original cryptography algorithm built with a focus on bitwise manipulation and mathematical foundations. The repository documents the underlying theory and architectural decisions in detail.
 * **Tech Stack:** Vanilla JavaScript (ES6+), BigInt, Web Crypto API (`crypto.getRandomValues`)
 
+### [LaTeX-Editor](https://github.com/Caetanoag/LaTeX-Editor)
+Self-hosted and browser-based collaborative LaTeX editor for enterprise use.
+
+* **Tech Stack**: TypeScript, Express.js, PostgreSQL, Docker, HTML5, CSS3, Bun.
+
 ---
 
 ## Contact
