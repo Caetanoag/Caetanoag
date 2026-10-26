@@ -1,4 +1,4 @@
-# Caetano Gonçalves
+# Caetano G.
 Web and Systems Developer | TypeScript | C | C++ | Odin | Golang
 
 ## About Me
